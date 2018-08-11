@@ -20,7 +20,9 @@ div {
 div.blue {
   background-color: blue;
 }
-
+.green {
+  background-color: green;
+}
 .invisible {
   display: none;
 }
