@@ -1,13 +1,17 @@
-html, body {
+html, main {
   height: 100%;
 }
 
-body {
+main {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 15%;
 }
-
+.title {
+ text-align: center;
+ 
+}
 div {
   width: 100px;
   height: 100px;
@@ -17,11 +21,14 @@ div {
   background-color: #eee;
 }
 
-div.blue {
-  background-color: blue;
+div.pink {
+  background-color: pink;
 }
-.green {
-  background-color: green;
+.gray {
+  background-color:gray;
+}
+.aquamarine {
+  background-color: aquamarine;
 }
 .invisible {
   display: none;
