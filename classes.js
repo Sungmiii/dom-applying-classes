@@ -10,6 +10,7 @@ function start () {
   // Your turn! Create a new function called `two`, then call it from here.
   two()
   three()
+  makeVisible()
 }
 
 function one () {
@@ -32,3 +33,16 @@ function three() {
   three.classList.add('aquamarine');
 };
 // CREATE FUNCTION makeVisible HERE
+function makeVisible() {
+  var makeVisible = document.getElementsByClassName('invisible')[0];
+  makeVisible.classList.add('visible');
+  var visible = document.getElementsByClassName('invisible')[0];
+  visible.addEventListener('mouseenter', makeSky);
+  visible.addEventListener('mouseleave', makeWhite);
+}
+function makeSky(evt) {
+  evt.target.style.backgroundColor = 'skyblue';
+}
+function makeWhite(evt) {
+  evt.target.style.backgroundColor = 'white';
+}
